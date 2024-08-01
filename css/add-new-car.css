@@ -15,17 +15,22 @@ body{
     line-height: 1.5;
     background-color: #ffffff;
     color: #212529;
-    cursor: url(../../among-us-beautiful-witch-character-pointer.png), default;
+    cursor: url(../among-us-beautiful-witch-character-pointer.png), default;
 }
 header{
-    text-align: center;
+    overflow-x: hidden;
+    /* text-align: center; */
     padding: 16px 0;
     color: #ffffff;
     background-color: #2ed573;
 }
+header h1{
+    position: relative;
+    animation: color 3s linear infinite;
+}
 .container{
     display: flex;
-    min-height: 60vh;
+    min-height: 85vh;
 }
 aside{
     padding:24px 32px;
@@ -86,4 +91,32 @@ footer{
     color:#ffffff;
     background-color: #212529;
     padding: 16px 0;
+}
+@keyframes color{
+    0%{
+        color:red;
+        left: 0%;
+    }
+
+    20%{
+        color:blue;
+        left:20%;
+    }
+    40%{
+        color:white;
+        left:40%
+    }
+    60%{
+        color:orange;
+        left:60%
+    }
+
+    80%{
+        color:yellow;
+        left:80%
+    }
+    100%{
+        color: purple;
+        left:100%
+    }
 }
