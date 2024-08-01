@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8">
+        <title>Accessory Detail</title>
+        <link rel="stylesheet" href="../css/accessory-detail.css">
+        <link type="image/png" sizes="32x32" rel="icon" href="../../icons8-car-32.png">
+    </head>
+    <body>
+        <header>AUTOMOTIVE REPAIR</header>
+        <div class = "container">
+            <aside>
+                <div class="menu">
+                    <p><b>MENU</b></p>
+                    <a href="add-new-car.html">add a new car</a>
+                    <a href="car-management.html">Cars management</a>
+                </div>
+            </aside>
+            <div class="vr"></div>
+            <main>
+                <form id = "accessory-update-form"> 
+                    <p><b>ACCESSORY DETAIL</b></p>
+                    <div class="form-control id">
+                        <label for="id">ID</label>
+                        <input type="text" name="id" id="id" disabled >
+                    </div>
+                    <div class="form-control">
+                        <label for="license-plate">License Plate</label>
+                        <input type="text" name="license-plate" id="license-plate" >
+                    </div>
+                    <div class="form-control">
+                        <label for="repair-date">Repair Date</label>
+                        <input type="date" name="repair-date" id="repair-date">
+                    </div>
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="form-control">
+                        <label for="price">Price</label>
+                        <input type="text" name="price" id="price">
+                    </div>
+                    <div class="form-control">
+                        <label for="status-damaged">Status Damaged</label>
+                        <input type="text" name="status-damaged" id="status-damaged">
+                    </div>
+                    <div class="form-control">
+                        <label for="repair-status">Repair Status</label>
+                        <input type="text" name="repair-status" id="repair-status">
+                    </div>
+                    <div class="form-submit">
+                        <div> 
+                            <input type="submit" value="Save car">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </div>
+                </form>
+                <div class="data">
+                    <div class = "table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>License Plate</th>
+                                    <th>Repair Date</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Status Damaged</th>
+                                    <th>Repair Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id = "accessories">
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="loading">
+                        <div class="loading-icon"></div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer><i>BASED ON SPRING FRAMEWORK</i></footer>
+        <script src="../js/accessory-detail.js"></script>
+    </body>
+</html>

@@ -1,0 +1,163 @@
+@font-face {
+    font-family: pacifico;
+    src: url(../../font/Pacifico-Regular.ttf);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: pacifico;
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #ffffff;
+    color: #212529;
+    cursor: url(../../among-us-beautiful-witch-character-pointer.png), default;
+}
+header{
+    text-align: center;
+    padding: 16px 0;
+    color: #ffffff;
+    background-color: #2ed573;
+}
+.container{
+    display: flex;
+    min-height: 75vh;
+}
+aside{
+    padding:24px 32px;
+}
+.menu{
+    position:sticky;
+    top:16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.vr{
+    width: 5px;
+    background-color: #2ed573;
+
+}
+main{
+    flex:1;
+   padding: 24px 32px;
+   max-width: 750px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+}
+.form-control label{
+    font-size: inherit;
+    font-family: inherit;
+
+}
+.form-control label::after{
+    content: " *";
+    color: #ff0000;
+}
+.form-control input{
+    height: 40px;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0px 8px;
+}
+.form-submit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-submit input{
+    padding: 8px 16px;
+    font-size: inherit;
+    font-family: inherit;
+ }
+footer{
+    text-align: center;
+    color:#ffffff;
+    background-color: #212529;
+    padding: 16px 0;
+}
+
+.table-container{
+    border: 1px solid #212529;
+    max-height: 600px;
+    min-width: 100vh;
+    overflow-y: scroll;
+}
+table{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-collapse: collapse;
+}
+thead{
+    position: sticky;
+    top:0px;
+    border-bottom:1px solid gray ;
+    background-color: #ffffff;
+}
+th,td{
+    border-bottom: 1px solid gray ;
+    border-right: 1px solid gray ;
+    padding: 4px 8px;
+}
+tbody tr:nth-child(odd){
+    background-color: #eeeeee;
+    
+}
+tbody tr:hover{
+    background-color: #dddddd;
+}
+tbody button{
+    padding:4px 8px;
+    font-size: 16px;
+    font-family: inherit;
+}
+td:last-child{
+    text-align: center;
+}
+td:nth-child(5){
+    text-align: right;
+}
+.data{
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vh;
+}
+#loading{
+    background-color: #ddd;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loading-icon{
+    height: 32px;
+    width: 32px;    
+    border:4px solid tomato;
+    border-left: transparent;
+    border-right: transparent;
+    border-radius: 70%;
+    animation:rotate 400ms linear infinite;
+}
+@keyframes rotate {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate:360deg;
+    }
+}
