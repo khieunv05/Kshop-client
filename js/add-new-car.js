@@ -1,4 +1,4 @@
-const BASE_URL = "https://sql12.freemysqlhosting.net:8080";
+const BASE_URL = "http://localhost:8080";
 const formLicensePlate = document.getElementById("license-plate");
 const formRepaireDate = document.getElementById("repaire-date");
 const formCustomerName = document.getElementById("customer-name");
